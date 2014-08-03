@@ -22,7 +22,7 @@
 
  2. `DOCKER>` #follow instructions for creating g8 template projects, e.g. [First Scalatra Project] (http://scalatra.org/2.3/getting-started/first-project.html); [Other G8 templates] (https://github.com/n8han/giter8/wiki/giter8-templates)
 
- 3. `DOCKER> (SBT)>` After starting a Jetty container from SBT prompt (> Container:Start), 
+ 3. `DOCKER> (SBT)>` After starting a Jetty service from SBT prompt ('> Container:Start'), 
  enter `Ctrl-P, Ctrl-Q` to put process in background
 
  4. `HOST> docker ps ; env | grep DOCKER_HOST` # combine these to get http://DOCKER_HOST:PORT to access the
