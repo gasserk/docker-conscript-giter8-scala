@@ -16,11 +16,11 @@
  2.b. Install Conscript/G8 Docker image from Docker Registry Hub
     `HOST> docker pull gasserk/jdk7-conscript-g8`
 
-###II.  Begin working with giter8-templated projects
+###II.  Begin working with giter8-templated projects in Docker
 
  1. `HOST> docker run -it -p 8080 MY_IMAGE /bin/bash`
 
- 2. `DOCKER>` #follow instructions for creating g8 template projects, [First Scalatra Project] (http://scalatra.org/2.3/getting-started/first-project.html)
+ 2. `DOCKER>` #follow instructions for creating g8 template projects, [First Scalatra Project] (http://scalatra.org/2.3/getting-started/first-project.html), [Other G8 templates] (https://github.com/n8han/giter8/wiki/giter8-templates)
 
  3. `DOCKER> (SBT)>` After starting a Jetty container from SBT prompt (> Container:Start), 
  enter `Ctrl-P, Ctrl-Q` to put process in background
