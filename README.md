@@ -1,4 +1,4 @@
-##Setup instructions for Scalatra/Swagger docker container from Conscript/G8 intermediate image
+##Setup instructions for Scalatra/Swagger Docker container from Conscript/Giter8 intermediate image
 
 ###I. Install Docker and Build or Install Working Image
 
