@@ -13,7 +13,7 @@
   iii. Once the build finishes successfuly, 
     `HOST> docker images` # MY_IMAGE name should appear under 'Repository' where 'none' will appear otherwise
 
- 2.b. Install Conscript/G8 Docker image 
+ 2.b. Install Conscript/G8 Docker image from Docker Registry Hub
     `HOST> docker pull gasserk/jdk7-conscript-g8`
 
 ###II.  Begin working with giter8-templated projects
