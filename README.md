@@ -4,16 +4,18 @@ I. Install Docker and Build or Install Working Image
 
  1. Install Docker: http://docs.docker.com/installation/ (NB if you already have VB running use Customize)
 
- 2.a.i. HOST> git clone https://github.com/gasserk/docker-conscript-giter8-scala.git
+ 2.a. Build Conscript/G8 Docker image from Dockerfile
+  i. HOST> git clone https://github.com/gasserk/docker-conscript-giter8-scala.git
 
- 2.a.ii. HOST> docker build -t MY_IMAGE MY_GIT_CLONE_DIR
+  ii. HOST> docker build -t MY_IMAGE MY_GIT_CLONE_DIR
 
- 2.a.iii. Once the build finishes successfuly, 
- HOST> docker images # MY_IMAGE name should appear under 'Repository' where '<none>' will appear otherwise
+  iii. Once the build finishes successfuly, 
+  HOST> docker images # MY_IMAGE name should appear under 'Repository' where '<none>' will appear otherwise
 
- 2.b. HOST> docker pull gasserk/jdk7-conscript-g8
+ 2.b. Install Conscript/G8 Docker image 
+  HOST> docker pull gasserk/jdk7-conscript-g8
 
-II.  Begin working with g8 templated projects
+II.  Begin working with giter8-templated projects
 
  1. HOST> docker run -it -p 8080 MY_IMAGE /bin/bash
 
