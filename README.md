@@ -2,15 +2,16 @@ Setup instructions for Scalatra/Swagger docker container from conscript/g8 inter
 
 1. Install Docker: http://docs.docker.com/installation/ (NB if you already have VB running use Customize)
 
-2ai. HOST> git clone https://github.com/gasserk/docker-conscript-giter8-scala.git
-2aii. HOST> docker build -t MY_IMAGE MY_GIT_CLONE_DIR
-2aiii. Once the build finishes successfuly, 
+2.a.i. HOST> git clone https://github.com/gasserk/docker-conscript-giter8-scala.git
+
+2.a.ii. HOST> docker build -t MY_IMAGE MY_GIT_CLONE_DIR
+
+2.a.iii. Once the build finishes successfuly, 
 HOST> docker images # MY_IMAGE name should appear under 'Repository' where '<none>' will appear otherwise
 
 *OR*
 
-2b. Run command on host:
-> docker pull gasserk/jdk7-conscript-g8
+2.b. HOST> docker pull gasserk/jdk7-conscript-g8
 
 3. HOST> docker run -it -p 8080 MY_IMAGE /bin/bash
 
