@@ -1,6 +1,6 @@
 ##Setup instructions for Scalatra/Swagger Docker container from Conscript/Giter8 intermediate image
 
-###I. Install Docker and Build or Install Working Image
+###I. Install Docker and Build or Install Intermediate Conscript/G8 Working Image
 
  1. [Install Docker] (http://docs.docker.com/installation/) (NB if you already have VirtualBox running use Customize during  install)
 
