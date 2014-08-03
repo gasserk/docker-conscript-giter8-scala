@@ -1,6 +1,6 @@
-Setup instructions for Scalatra/Swagger docker container from conscript/g8 intermediate image
+Setup instructions for Scalatra/Swagger docker container from Conscript/G8 intermediate image
 
-I. Install Docker and Working Image
+I. Install Docker and Build or Install Working Image
 
  1. Install Docker: http://docs.docker.com/installation/ (NB if you already have VB running use Customize)
 
@@ -10,8 +10,6 @@ I. Install Docker and Working Image
 
  2.a.iii. Once the build finishes successfuly, 
  HOST> docker images # MY_IMAGE name should appear under 'Repository' where '<none>' will appear otherwise
-
-*OR*
 
  2.b. HOST> docker pull gasserk/jdk7-conscript-g8
 
