@@ -11,7 +11,7 @@
   ii. `HOST> docker build -t MY_IMAGE MY_GIT_CLONE_DIR`
 
   iii. Once the build finishes successfuly, 
-    `HOST> docker images` # MY_IMAGE name should appear under 'Repository' where '<none>' will appear otherwise
+    `HOST> docker images` # MY_IMAGE name should appear under 'Repository' where 'none' will appear otherwise
 
  2.b. Install Conscript/G8 Docker image 
     `HOST> docker pull gasserk/jdk7-conscript-g8`
