@@ -1,43 +1,47 @@
 Setup instructions for Scalatra/Swagger docker container from conscript/g8 intermediate image
 
-1. Install Docker: http://docs.docker.com/installation/ (NB if you already have VB running use Customize)
+I. Install Docker and Working Image
 
-2.a.i. HOST> git clone https://github.com/gasserk/docker-conscript-giter8-scala.git
+ 1. Install Docker: http://docs.docker.com/installation/ (NB if you already have VB running use Customize)
 
-2.a.ii. HOST> docker build -t MY_IMAGE MY_GIT_CLONE_DIR
+ 2.a.i. HOST> git clone https://github.com/gasserk/docker-conscript-giter8-scala.git
 
-2.a.iii. Once the build finishes successfuly, 
-HOST> docker images # MY_IMAGE name should appear under 'Repository' where '<none>' will appear otherwise
+ 2.a.ii. HOST> docker build -t MY_IMAGE MY_GIT_CLONE_DIR
+
+ 2.a.iii. Once the build finishes successfuly, 
+ HOST> docker images # MY_IMAGE name should appear under 'Repository' where '<none>' will appear otherwise
 
 *OR*
 
-2.b. HOST> docker pull gasserk/jdk7-conscript-g8
+ 2.b. HOST> docker pull gasserk/jdk7-conscript-g8
 
-3. HOST> docker run -it -p 8080 MY_IMAGE /bin/bash
+II.  Begin working with g8 templated projects
 
-4. DOCKER> #follow instructions for creating g8 template projects, 
-e.g. Scalatra: http://scalatra.org/2.3/getting-started/first-project.html
+ 1. HOST> docker run -it -p 8080 MY_IMAGE /bin/bash
 
-5. DOCKER> (SBT)> After starting a Jetty container from SBT prompt (> Container:Start), 
-enter Ctrl-P, Ctrl-Q to put process in background
+ 2. DOCKER> #follow instructions for creating g8 template projects, 
+ e.g. Scalatra: http://scalatra.org/2.3/getting-started/first-project.html
 
-6. HOST> docker ps ; env | grep DOCKER_HOST # combine these to get http://DOCKER_HOST:PORT to access the
-service the Docker container is exposing on 8080 (HOST forwards to that)
+ 3. DOCKER> (SBT)> After starting a Jetty container from SBT prompt (> Container:Start), 
+ enter Ctrl-P, Ctrl-Q to put process in background
 
-7. HOST> docker ps -a ; docker attach RUNNING_CONTAINER # pull the running container id from ps to
-re-access the container's shell
+ 4. HOST> docker ps ; env | grep DOCKER_HOST # combine these to get http://DOCKER_HOST:PORT to access the
+ service the Docker container is exposing on 8080 (HOST forwards to that)
 
-8. DOCKER> (SBT)> Container:Stop # since you should still be running within SBT, this will stop the service
+ 5. HOST> docker ps -a ; docker attach RUNNING_CONTAINER # pull the running container id from ps to
+ re-access the container's shell
 
-9. DOCKER> (SBT)> exit
+ 6. DOCKER> (SBT)> Container:Stop # since you should still be running within SBT, this will stop the service
 
-10. DOCKER> # You can git the swagger example repo for scalatra, e.g. and follow along
-http://scalatra.org/guides/swagger.html
-https://github.com/scalatra/scalatra-website-examples/tree/master/2.2/swagger-example 
+ 7. DOCKER> (SBT)> exit
 
-11. DOCKER> # After compiling project, entering sbt, starting container, enter Ctrl-P, Ctrl-Q again
+ 8. DOCKER> # You can git the swagger example repo for scalatra, e.g. and follow along
+ http://scalatra.org/guides/swagger.html
+ https://github.com/scalatra/scalatra-website-examples/tree/master/2.2/swagger-example 
 
-12. HOST> # You should be able to surf to http://DOCKER_HOST:PORT/api_docs to get swagger JSON or 
-/flowers directly for a REST call
+ 9. DOCKER> # After compiling project, entering sbt, starting container, enter Ctrl-P, Ctrl-Q again
+
+ 10. HOST> # You should be able to surf to http://DOCKER_HOST:PORT/api_docs to get swagger JSON or 
+ /flowers directly for a REST call
  
-13. HOST> remember to run 'docker commit' on any container you want to save as an image
+ 11. HOST> remember to run 'docker commit' on any container you want to save as an image
