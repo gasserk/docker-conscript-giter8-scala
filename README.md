@@ -20,8 +20,7 @@
 
  1. `HOST> docker run -it -p 8080 MY_IMAGE /bin/bash`
 
- 2. `DOCKER>` #follow instructions for creating g8 template projects, 
- * [First Scalatra Project] (http://scalatra.org/2.3/getting-started/first-project.html)
+ 2. `DOCKER>` #follow instructions for creating g8 template projects, [First Scalatra Project] (http://scalatra.org/2.3/getting-started/first-project.html)
 
  3. `DOCKER> (SBT)>` After starting a Jetty container from SBT prompt (> Container:Start), 
  enter `Ctrl-P, Ctrl-Q` to put process in background
@@ -36,9 +35,7 @@
 
  7. `DOCKER> (SBT)> exit`
 
- 8. `DOCKER>` # You can git the swagger example repo for scalatra, e.g. and follow along
- * [Scalatra Swagger Guide] (http://scalatra.org/guides/swagger.html)
- * [Scalatra Guide on Git] (https://github.com/scalatra/scalatra-website-examples/tree/master/2.2/swagger-example) 
+ 8. `DOCKER>` # Git the swagger example repo for scalatra, e.g. and follow along [Scalatra Swagger Guide] (http://scalatra.org/guides/swagger.html), [Scalatra Guide on Git] (https://github.com/scalatra/scalatra-website-examples/tree/master/2.2/swagger-example) 
 
  9. `DOCKER>` # After compiling project, entering sbt, starting container, enter `Ctrl-P, Ctrl-Q` again
 
