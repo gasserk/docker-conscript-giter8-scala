@@ -2,6 +2,8 @@
 
 ###I. Install Docker and build or install intermediate Conscript/G8 working image
 
+(Please note: for ease of explanation, below I use `HOST>` to denote the Docker host OS shell prompt, or OSX shell on a Mac which is operating via a Type 2 VM like VirtualBox/Boot2Docker; I use `DOCKER>` to denote the shell prompt opened on the Docker Container via `docker run` command)
+
  1. [Install Docker] (http://docs.docker.com/installation/) (NB if you already have VirtualBox running use Customize during  install)
 
  2.a. Build Conscript/G8 Docker image from Dockerfile
