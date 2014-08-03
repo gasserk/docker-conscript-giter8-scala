@@ -5,6 +5,7 @@ I. Install Docker and Build or Install Working Image
  1. Install Docker: http://docs.docker.com/installation/ (NB if you already have VirtualBox running use Customize during  install)
 
  2.a. Build Conscript/G8 Docker image from Dockerfile
+ 
   i. HOST> git clone https://github.com/gasserk/docker-conscript-giter8-scala.git
 
   ii. HOST> docker build -t MY_IMAGE MY_GIT_CLONE_DIR
