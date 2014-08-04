@@ -19,7 +19,7 @@
   b. Install Conscript/G8 Docker image via pull from Docker Registry Hub
     `HOST> docker pull gasserk/jdk7-conscript-g8`
 
-  c. Obtain a .tar of the image and use `docker load -i IMAGE.tar` then `docker tag IMAGE_ID MY_IMAGE` (you can get the image id by running `docker images` will show the freshly loaded image with a starting tag of `none`.
+  c. Obtain a .tar of the image and use `docker load -i IMAGE.tar` then `docker tag IMAGE_ID MY_IMAGE` (you can get the image id by running `docker images` will show the freshly loaded image with a starting tag of `none`).
 
 ###II.  Begin working with giter8-templated projects in Docker
 
