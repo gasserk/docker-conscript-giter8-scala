@@ -24,7 +24,7 @@
 
  2. `DOCKER>` #follow instructions for creating g8 template projects, e.g. [First Scalatra Project] (http://scalatra.org/2.3/getting-started/first-project.html); [Other G8 templates] (https://github.com/n8han/giter8/wiki/giter8-templates)
 
- 3. `DOCKER> (SBT)>` After starting a Jetty service from SBT prompt ('> Container:Start'), 
+ 3. `DOCKER> (SBT)>` After starting a Jetty service from SBT prompt (`> container:start`), 
  enter `Ctrl-P, Ctrl-Q` to put process in background
 
  4. `HOST> docker ps ; env | grep DOCKER_HOST` # combine these to get http://DOCKER_HOST:PORT to access the
@@ -33,7 +33,7 @@
  5. `HOST> docker ps -a ; docker attach RUNNING_CONTAINER` # pull the running container id from ps to
  re-access the container's shell
 
- 6. `DOCKER> (SBT)> Container:Stop` # since you should still be running within SBT, this will stop the Jetty service
+ 6. `DOCKER> (SBT)> container:stop` # since you should still be running within SBT, this will stop the Jetty service
 
  7. `DOCKER> (SBT)> exit`
 
