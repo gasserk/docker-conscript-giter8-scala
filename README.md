@@ -5,14 +5,19 @@
 (Please note: for ease of explanation, below I use `HOST>` to denote the Docker host OS shell prompt, or OSX shell on a Mac which is operating via a Type 2 VM like VirtualBox/Boot2Docker; I use `DOCKER>` to denote the shell prompt opened on the Docker Container via `docker run` command)
 
 1. [Install Docker] (http://docs.docker.com/installation/) (NB if you already have VirtualBox running use Customize during  install)
- 2.a. Build Conscript/G8 Docker image from Dockerfile
-   i. `HOST> git clone https://github.com/gasserk/docker-conscript-giter8-scala.git`
-   ii. `HOST> docker build -t MY_IMAGE MY_GIT_CLONE_DIR`
-   iii. Once the build finishes successfuly, 
+
+2. Build or Pull or Load the Image
+ a. Build Conscript/G8 Docker image from Dockerfile
+
+  i. `HOST> git clone https://github.com/gasserk/docker-conscript-giter8-scala.git`
+  ii. `HOST> docker build -t MY_IMAGE MY_GIT_CLONE_DIR`
+  iii. Once the build finishes successfuly, 
     `HOST> docker images` # MY_IMAGE name should appear under 'Repository' where 'none' will appear otherwise
- 2.b. Install Conscript/G8 Docker image from Docker Registry Hub
+
+  b. Install Conscript/G8 Docker image via pull from Docker Registry Hub
     `HOST> docker pull gasserk/jdk7-conscript-g8`
- 3. Obtain a .tar of the image and use `docker load -i IMAGE.tar` then `docker tag IMAGE_ID MY_IMAGE` (you can get the image id by running `docker images` will show the freshly loaded image with a starting tag of `none`.
+
+  c. Obtain a .tar of the image and use `docker load -i IMAGE.tar` then `docker tag IMAGE_ID MY_IMAGE` (you can get the image id by running `docker images` will show the freshly loaded image with a starting tag of `none`.
 
 ###II.  Begin working with giter8-templated projects in Docker
 
