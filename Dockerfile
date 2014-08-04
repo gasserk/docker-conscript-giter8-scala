@@ -5,8 +5,9 @@
 FROM dockerfile/java
 
 # we need this because the workdir is modified in dockerfile/java
-# 20140803-kg-changed from / to /data given https://github.com/docker/docker/issues/6619
-#WORKDIR /data
+# 20140803-kg-changed from / to /root given https://github.com/docker/docker/issues/6619
+# NB: do not use /data for data persistent to container as it is mounted to host
+#WORKDIR /root
 
 ENV HOME /root
 RUN cd /tmp && wget --no-check-certificate https://raw.githubusercontent.com/n8han/conscript/master/setup.sh
