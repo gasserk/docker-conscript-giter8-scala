@@ -10,7 +10,9 @@
  a. Build Conscript/G8 Docker image from Dockerfile
 
   i. `HOST> git clone https://github.com/gasserk/docker-conscript-giter8-scala.git`
+  
   ii. `HOST> docker build -t MY_IMAGE MY_GIT_CLONE_DIR`
+  
   iii. Once the build finishes successfuly, 
     `HOST> docker images` # MY_IMAGE name should appear under 'Repository' where 'none' will appear otherwise
 
