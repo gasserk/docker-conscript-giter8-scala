@@ -28,7 +28,7 @@
  enter `Ctrl-P, Ctrl-Q` to put process in background
 
  4. `HOST> docker ps ; env | grep DOCKER_HOST` # combine these to get http://DOCKER_HOST:PORT to access the
- service the Docker container is exposing on 8080. Default: http://192.168.59.103:49153 on OSX and Windows running Boot2Docker.  Note: check 'ifconfig' on the Boot2Docker HOST VM if DOCKER_HOST is not available.
+ service the Docker container is exposing on 8080. Default: http://192.168.59.103:49153 on OSX and Windows running Boot2Docker.  Note: check `ifconfig` on the Boot2Docker HOST VM if DOCKER_HOST is not available.
 
  5. `HOST> docker ps -a ; docker attach RUNNING_CONTAINER_ID` # pull the running container id from ps to
  re-access the container's shell
