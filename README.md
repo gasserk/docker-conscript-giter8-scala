@@ -30,7 +30,7 @@
  4. `HOST> docker ps ; env | grep DOCKER_HOST` # combine these to get http://DOCKER_HOST:PORT to access the
  service the Docker container is exposing on 8080 (HOST forwards to that)
 
- 5. `HOST> docker ps -a ; docker attach RUNNING_CONTAINER` # pull the running container id from ps to
+ 5. `HOST> docker ps -a ; docker attach RUNNING_CONTAINER_ID` # pull the running container id from ps to
  re-access the container's shell
 
  6. `DOCKER> (SBT)> container:stop` # since you should still be running within SBT, this will stop the Jetty service
