@@ -1,6 +1,6 @@
 ##Setup instructions for Scalatra/Swagger Docker container (from Conscript/Giter8 intermediate image)
 
-###I. Install Docker and build or install intermediate Conscript/G8 working image
+###I. Install Docker and build from Dockerfile, or install intermediate Conscript/G8 working image and build up, or  load up a tar
 
 (Please note: for ease of explanation, below I use `HOST>` to denote the Docker host OS shell prompt, or OSX shell on a Mac which is operating via a Type 2 VM like VirtualBox/Boot2Docker; I use `DOCKER>` to denote the shell prompt opened on the Docker Container via `docker run` command)
 
@@ -17,6 +17,8 @@
 
  2.b. Install Conscript/G8 Docker image from Docker Registry Hub
     `HOST> docker pull gasserk/jdk7-conscript-g8`
+    
+ 3. Obtain a .tar of the image and use `docker load -i IMAGE.tar` then `docker tag IMAGE_ID MY_IMAGE` (you can get the image id by running `docker images` will show the freshly loaded image with a starting tag of `none`.
 
 ###II.  Begin working with giter8-templated projects in Docker
 
