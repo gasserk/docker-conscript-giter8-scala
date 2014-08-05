@@ -40,7 +40,7 @@
 
  7. `DOCKER> (SBT)> exit`
 
- 8. `DOCKER>` # Git the swagger example repo for scalatra, e.g. and follow along [Scalatra Swagger Guide] (http://scalatra.org/guides/swagger.html), [Scalatra Guide on Git] (https://github.com/scalatra/scalatra-website-examples/tree/master/2.2/swagger-example) 
+ 8. `DOCKER>` # Follow the instructions for the [Scalatra Swagger Flowershop] (https://github.com/scalatra/scalatra-website-examples/tree/master/2.2/swagger-example) or other excercises at [Scalatra Swagger Guide] (http://scalatra.org/guides/swagger.html), or [Scalatra Guide on Git] (https://github.com/scalatra/scalatra-website-examples/tree/master/2.2/swagger-example) 
 
  9. `DOCKER>` # After compiling project, entering sbt, starting container, enter `Ctrl-P, Ctrl-Q` again
 
